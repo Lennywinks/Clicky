@@ -1,6 +1,7 @@
-from clicker import Clicker
 from nicegui import app, ui
 from nicegui.events import KeyEventArguments
+
+from clicker import Clicker
 
 clicker = Clicker()
 
