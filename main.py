@@ -42,18 +42,20 @@ def set_hotkey(hotkey_button: ui.button, hotkey_label: ui.label) -> None:
 
 def main():
     """The whole UI part could be outsourced to a different UI-State Class. But it works for now"""
-    app.native.window_args['resizable'] = False
-    app.native.start_args['debug'] = False
+    app.native.window_args["resizable"] = False
+    app.native.start_args["debug"] = False
 
     ui.dark_mode().enable()
 
     with ui.row().classes("w-full no-wrap"):
+        # Card for Mouse Button selection
         with ui.card().classes("w-1/2 items-center h-32"):
             ui.label("Mouse Button").classes("font-bold")
             button_selection = ui.toggle(["Left", "Middle", "Right"],
                                          value="Left",
                                          on_change=lambda e: clicker.set_mouse_button(e.value))
 
+        # Card for Clicks per second slider
         with ui.card().classes("w-1/2 items-center h-32"):
             ui.label("Clicks per second").classes("font-bold")
             slider = ui.slider(value=20,
@@ -64,18 +66,19 @@ def main():
             ui.label().bind_text_from(slider, "value")
 
     with ui.row().classes("w-full no-wrap"):
+        # Card for Mode Selection
         with ui.card().classes("w-1/2 items-center h-32"):
-            ui.label("Mode").classes("font-bold")
+            ui.label("Mode Selection").classes("font-bold")
             mode_selection = ui.toggle(["Hold down", "Press once"],
                                        value="Hold down",
                                        on_change=lambda e: clicker.set_mode(e.value))
 
+        # Card for Hotkey Selection
         with ui.card().classes("w-1/2 items-center h-32"):
             hotkey_label = ui.label("F20").classes("font-bold")
             hotkey_button = ui.button("Change Hotkey", on_click=lambda: set_hotkey(hotkey_button, hotkey_label))
-    # ui.row()
-    # ui.row()
 
+    # Start and stop Button
     with ui.row().classes("w-full no-wrap"):
         async def on_start() -> None:
             start_button.disable()
