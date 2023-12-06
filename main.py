@@ -1,5 +1,4 @@
 from clicker import Clicker
-import keyboard
 from nicegui import app, ui
 from nicegui.events import KeyEventArguments
 
