@@ -27,8 +27,8 @@ class Clicker:
     def set_clicks_per_second(self, clicks_per_second: int) -> None:
         """Takes the CPS (int) from the slider as input. Converts it into seconds (float)
         The calculated value does not translate exactly into the right amount of seconds
-        The amplifier of 4% is used to make up for that difference"""
-        self.pause = 1/(clicks_per_second*1.04)
+        The amplifier of 10% is used to make up for that difference"""
+        self.pause = 1/(clicks_per_second*1.1)
 
     def set_mode(self, mode: str) -> None:
         self.mode = mode

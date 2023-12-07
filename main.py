@@ -123,7 +123,7 @@ def main():
         start_button = ui.button("Start", on_click=on_start).classes("w-3/4 text-black").props("color=cyan-12")
         ui.button("Stop", on_click=on_stop).classes("w-1/4 text-black").props("color=cyan-12")
 
-    ui.run(native=True, window_size=(700, 388), reload=False, title="Clicky", frameless=True)
+    ui.run(native=True, window_size=(700, 400), reload=False, title="Clicky", frameless=True)
 
 
 if __name__ in ("__main__", "__mp_main__"):
