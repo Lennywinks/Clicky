@@ -14,8 +14,8 @@ In this case you have to press **More Info** and then **Run Anyways**
 
 ## Configuration - How to Use
 ![Clicky Screenshot](https://github.com/Lennywinks/Clicky/blob/main/img/clicky_screenshot.png?raw=True)
-1. Choose the Mouse Button to be used
-2. Choose the Clicks per Second via the slider. Minimum is 1 and Maximum is 100 Clicks per Second. [(Actual values might differ.)](#known-issues)
+1. Choose the Mouse Button to be used. Either Left, Middle or Right Mouse.
+2. Choose the Clicks per Second via the slider. Minimum is 1 and Maximum is 100 Clicks per Second. [(Actual values might differ)](#known-issues)
 3. Choose a Mode:\
    **Hold Down** waits for your Hotkey and clicks as long as you keep holding it down. Release it to stop clicking.\
    **Press Once** waits for you Hotkey. Once you press it, it starts clicking. Press it again to stop clicking.
