@@ -2,7 +2,7 @@ from nicegui import app, ui
 from nicegui.events import KeyEventArguments
 
 from clicker import Clicker
-from titlebar import titlebar
+
 clicker = Clicker()
 
 
