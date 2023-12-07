@@ -1,5 +1,5 @@
 # What is Clicky?
-**Clicky is yet another compact and easy to use Auto Clicker for windows.**
+**Clicky is yet another compact and easy to use Auto Clicker for Windows.**
 
 ## Why another one?
 The current options did not really compell to me, so I made my own!\
