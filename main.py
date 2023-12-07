@@ -45,7 +45,7 @@ def main():
     """The whole UI part could be outsourced to a different UI-State Class. But it works for now"""
     app.native.window_args["resizable"] = False
     app.native.window_args["easy_drag"] = True
-    app.native.start_args["debug"] = True
+    app.native.start_args["debug"] = False
 
     ui.dark_mode().enable()
 
